@@ -1,0 +1,34 @@
+------------<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <script type="text/javascript" src="project.js"></script> 
+    </head>
+
+    <body onload="enter();" >
+
+   <h1> <em> TIC-TAC-TOE </em></h1>
+   <p id="welcome"></p>
+   <p id="pn" > Both players pls enter your names :</p>
+   <input id="p1" type="text"/><br>
+   <input id="p2" type="text" onblur="assign();"/><br><br>
+   <button id="begin"> CLICK TO BEGIN</button>
+   <p id="0x" ></p>
+   <div class="grid-container">
+       <div class="b1"><button id="bb1" onclick="check1();"></button></div>
+
+       <div class="b2"><button id="bb2" onclick="check2();"></button></div>
+       <div class="b3"><button id="bb3" onclick="check3();"></button></div>
+       <div class="b4"><button id="bb4" onclick="check4();"></button></div>
+
+       <div class="b5"><button id="bb5" onclick="check5();"></button></div>
+       <div class="b6"><button id="bb6" onclick="check6();"></button></div>
+       <div class="b7"><button id="bb7" onclick="check7();"></button></div>
+
+       <div class="b8"><button id="bb8" onclick="check8();"></button></div>
+       <div class="b9"><button id="bb9" onclick="check9();"></button></div>
+   </div>
+   <p id="print"></p>
+   <button id="restart" onclick="reset();"><strong> RESTART</strong></button>
+    </body>
+</html>
